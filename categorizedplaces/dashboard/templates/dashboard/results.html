@@ -1,0 +1,8 @@
+{% csrf_token %}
+{% if business_list %}
+    <ul>
+       <p>{{response_str|safe}}</p>
+    </ul>
+{% else %}
+    <p>No businesses are available.</p>
+{% endif %}
